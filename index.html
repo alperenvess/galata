@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <title>Galata Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="#" class="logo"><img src="images/logo-color.png"></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#team">team</a>
+            <a href="#reservation">reservation</a>
+            <a href="#blog">blog</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-icons"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-turkish-lira"></i>
+           <!-- <i class="fas fa-shopping-cart"></i> -->
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu-icons');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+    <!-- slider section start -->
+    <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <img src="images/crown-symbol.png">
+
+                        <h3>galata restaurant</h3>
+                        <h1>Devour the food</h1>
+                        <p>
+                            give away your beloved ones
+                        </p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                </div> 
+
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <img src="images/crown-symbol.png">
+
+                        <h3>Chef's suggestion</h3>
+                        <h1>enjoy the time</h1>
+                        <p>
+                            give away your beloved ones
+                        </p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                </div> 
+
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                        <img src="images/crown-symbol.png">
+
+                        <h3>we are open</h3>
+                        <h1>comfort and happiness</h1>
+                        <p>
+                            give away your beloved ones
+                        </p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+     <!-- slider section end -->
+
+     <!-- slider section start -->
+     <section class="welcome" id="about">
+        <h1 class="heading">WELCOME TO GALATA</h1>
+        <center><h3 class="sub-heading"> ~ Luxury and Quality ~ </h3></center>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="/images/post-thumb-1.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>Professional Level</h3>
+                    <p>Love to food love to each other</p>
+
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="/images/post-thumb-2.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>Milena Rogowska</h3>
+                    <p>Love to food love to each other</p>
+
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="/images/post-thumb-6.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>Various Wine Selection</h3>
+                    <p>Love to food love to each other</p>
+
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- welcome section end -->
+
+     <!-- menu section start -->
+    <section class="menu" id="menu"> 
+        <h1 class="heading">menu</h1>
+        <center><h3 class="sub-heading"> ~ discover the selections ~ </h3></center>
+
+        <div class="menu-container">
+            <div class="item">
+                <div class="item-name">
+                    <h2>Appetizers</h2>
+                    <img src="images/drinks.png" alt="">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Zupa Istanbul</h3>
+                        <span class="dots"></span>
+                        <h3>39zl</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Polish</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-body">
+                        <div class="item-menu">
+                            <h3>Zupa Istanbul</h3>
+                            <span class="dots"></span>
+                            <h3>44zl</h3>
+    
+                            <ul>
+                                <li><a href="#">Mushrooms</a></li>
+                                <li><a href="#">Polish</a></li>
+                                <li><a href="#">Sausage</a></li>
+                                <li><a href="#">Spinach</a></li>
+    
+                            </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Main Course</h2>
+                    <img src="images/drinks.png" alt="">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Zupa Istanbul</h3>
+                        <span class="dots"></span>
+                        <h3>39zl</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Polish</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-body">
+                        <div class="item-menu">
+                            <h3>Zupa Istanbul</h3>
+                            <span class="dots"></span>
+                            <h3>44zl</h3>
+    
+                            <ul>
+                                <li><a href="#">Mushrooms</a></li>
+                                <li><a href="#">Polish</a></li>
+                                <li><a href="#">Sausage</a></li>
+                                <li><a href="#">Spinach</a></li>
+    
+                            </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Desserts</h2>
+                    <img src="images/drinks.png" alt="">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Zupa Istanbul</h3>
+                        <span class="dots"></span>
+                        <h3>39zl</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Polish</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-body">
+                        <div class="item-menu">
+                            <h3>Zupa Istanbul</h3>
+                            <span class="dots"></span>
+                            <h3>44zl</h3>
+    
+                            <ul>
+                                <li><a href="#">Mushrooms</a></li>
+                                <li><a href="#">Polish</a></li>
+                                <li><a href="#">Sausage</a></li>
+                                <li><a href="#">Spinach</a></li>
+    
+                            </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-name">
+                    <h2>Drinks</h2>
+                    <img src="images/drinks.png" alt="">
+                </div>
+
+                <div class="item-body">
+                    <div class="item-menu">
+                        <h3>Zupa Istanbul</h3>
+                        <span class="dots"></span>
+                        <h3>39zl</h3>
+
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Polish</a></li>
+                            <li><a href="#">Sausage</a></li>
+                            <li><a href="#">Spinach</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="item-body">
+                        <div class="item-menu">
+                            <h3>Zupa Istanbul</h3>
+                            <span class="dots"></span>
+                            <h3>44zl</h3>
+    
+                            <ul>
+                                <li><a href="#">Mushrooms</a></li>
+                                <li><a href="#">Polish</a></li>
+                                <li><a href="#">Sausage</a></li>
+                                <li><a href="#">Spinach</a></li>
+    
+                            </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- menu section end -->
+
+     <!-- our team section start-->
+     <section class="our-team" id="team">
+        <h1 class="heading">our talented chef</h1>
+        <center>
+            <h3 class="sub-heading"> ~ Experience & Enthusiasm ~ </h3>
+        </center>
+
+        <div class="our-chef">
+            <div class="item">
+                <div class="image">
+                    <img src="images/alp-chef.jpeg" alt="">
+                </div>
+
+                <div class="chef-info">
+                    <div>
+                        <h3>Alperen Vanlioglu</h3>
+                        <span>Master Chef</span>
+
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="images/milena-chef.jpeg" alt="">
+                </div>
+
+                <div class="chef-info">
+                    <div>
+                        <h3>Milena Rogowska</h3>
+                        <span>Master Eater</span>
+
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="images/klaudia-chef.jpeg" alt="">
+                </div>
+
+                <div class="chef-info">
+                    <div>
+                        <h3>Klaudia</h3>
+                        <span>Master Beauty</span>
+
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- our team section end-->
+
+     <!-- reservation section start-->
+     <div class="reservation" id="reservation">
+        <div class="image">
+
+        </div>
+        <div class="form">
+            <h1 class="heading">Reserve a table</h1>
+            <center><h3 class="sub-heading"> ~ Discover Galata ~</h3></center>
+
+            <form>
+                <div class="form-holder">
+                    <div>
+                       <select>
+                            <option>1 people</option>
+                            <option>2 people</option>
+                            <option>3 people</option>
+                            <option>4 people</option>
+                        </select>
+                        <input type="text" name="" placeholder="Reservation Time">
+                        <input type="text" name="" placeholder="Phone Number">
+                    </div>
+
+                    <div>
+                        <input type="text" name="" placeholder="Date">
+                        <input type="text" name="" placeholder="Name & Surname">
+                        <input type="email" name="" placeholder="Email">
+                    </div>
+                </div>
+                <center><a href="#" class="btn">Book Now</a></center>
+            </form>
+        </div>
+     </div>
+     <!-- reservation section end --> 
+
+     <!-- news sections start -->
+     <section class="blog welcome" id="blog">
+        <h1 class="heading">News</h1>
+        <center><h3 class="sub-heading"> ~ Articles ~ </h3></center>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/post-thumb-5.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>We Do The Best</h3>
+                    <p>More with love</p>
+                    <a href="#">Read More</a>
+                    <img src="images/post-body-bg-3.png">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/love.png">
+                </div>
+
+                <div class="content">
+                    <h3>To you ...</h3>
+                    <p>Gelsene dedi bana,
+                        Kalsana dedi bana,
+                        Gülsene dedi bana,
+                        Ölsene dedi bana,
+                        
+                        Geldim,
+                        Kaldım,
+                        Güldüm,
+                        Öldüm.
+                    </p>
+                    <a href="#">Read More</a>
+                    <img src="images/post-body-bg-2.png">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/post-thumb-6.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>We Do The Best</h3>
+                    <p>More with love</p>
+                    <a href="#">Read More</a>
+                    <img src="images/post-body-bg-1.png
+                    ">
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- news sections end -->
+
+     <!-- footer section start -->
+     <section class="footer">
+        <img src="images/logo-color.png" class="logo">
+        <div class="container">
+            <div>
+                <h3>ABOUT US</h3>
+                <p>Dedication to food made with Love</p>
+            </div>
+            <div>
+                <h3>Get News</h3>
+                <input type="email" name="" placeholder="enter your email">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp-square"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>CONTACT US</h3>
+                <span>Galata Restaurant</span>
+                <span>+48(123)-456-789</span>
+                <span>galatarestaurant.pl</span>
+
+            </div>
+        </div>
+
+        <p>&copy;2023 Vanlioglu</p>
+     </section>
+     <!-- footer section end -->
+
+     <!-- jump to top -->
+
+     <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-double-up"></i></button></a>
+
+
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+        var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 7500,
+            disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+    });
+  </script>
+</body>
+</html>
