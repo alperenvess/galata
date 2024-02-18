@@ -298,6 +298,7 @@ section
     list-style: none;
     padding: .8rem 0;
     font-weight: 200;
+    margin-right: 5px;
 }
 .menu .menu-container .item .item-menu ul li a
 {
